@@ -29,7 +29,7 @@ lotr_tidy <- arrange(lotr_tidy, Gender)
 lotr_tidy
 
 # write tidy grouped data to a new csv file
-write_csv(lotr_tidy, "lotr_tidy.csv")
+write_csv(lotr_tidy, path = file.path("data", "lotr_tidy.csv"))
 
 
 

@@ -11,10 +11,10 @@ fship
 ttow
 rking
 
-# group data into one untidy datafile by stacking rows
+# group data into one untidy dataframe by stacking rows
 lotr_untidy <- bind_rows(fship, ttow, rking)
 
-# check the big untidy datafile
+# check the big untidy dataframe
 str(lotr_untidy)
 lotr_untidy
 

@@ -19,3 +19,12 @@ mf_race_tidy
   ## input lotr_tidy df as input 
 lotr_race_tidy <- arrange(lotr_tidy, Race)
 lotr_race_tidy
+
+
+# untidying, using pivot_wider()
+lotr_race_untidy <- lotr_race_tidy %>%
+  pivot_wider(names_from = Words, values_from = )
+
+
+
+

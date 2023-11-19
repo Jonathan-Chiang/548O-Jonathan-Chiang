@@ -23,8 +23,9 @@ lotr_race_tidy
 
 # untidying, using pivot_wider()
 lotr_race_untidy <- lotr_race_tidy %>%
-  pivot_wider(names_from = Words, values_from = )
+  pivot_wider(names_from = Gender, values_from = Words)
 
+write_csv(lotr_race_untidy, "data/lotr_race_untidy.csv")
 
 
 

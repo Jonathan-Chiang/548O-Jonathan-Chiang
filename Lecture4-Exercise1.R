@@ -1,4 +1,4 @@
-### Exercise 3 ###
+### Exercise 1 ###
 shrub_volume <- read.csv("data/shrub-volume-data.csv")
 
 # check column names in data set 

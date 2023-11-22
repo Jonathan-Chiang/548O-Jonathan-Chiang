@@ -74,4 +74,25 @@ ds_weight_by_year <- surveys %>%
 
 
 
+### Mutliple filter conditions
+
+## "and" conditions; all conditions must be true  
+# combine conditions " by using commas to separate arguments
+filter(surveys, species_id == "DS", year > 1995)
+
+# combine conditions by using & between arguments 
+filter(surveys, species_id == "DS" & year > 1995)
+
+
+## "or" conditions"; one or more of the conditions must be true 
+# showcase optional conditions with |
+filter(surveys, species_id == "DS" | species_id == "DM" | species_id == "DO")
+
+
+## filter based on aggregated values
+# estimate sepcies weights only for specie with > 100 individuals 
+species_weights <- surveys %>%
+  group_by(species_id) %>%
+  filter(n() > 100) %>%
+  summarize(avg_weight = mean(weight, na.rm = TRUE))
 

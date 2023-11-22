@@ -55,4 +55,23 @@ ds_weight_by_year <- summarize(ds_data_by_year,
                                avg_weight = mean(weight, na.rm = TRUE))
 
 
+### Examples of using Pipes ### 
+
+# Ex1 
+x = c(1, 2, 3, NA)
+mean(x, na.rm = TRUE)
+x %>% mean(na.rm = TRUE)
+
+# Ex2
+surveys %>%
+  filter(species_id == "DS", !is.na(weight))
+
+# Ex3
+ds_weight_by_year <- surveys %>%
+  filter(species_id == "DS") %>%
+  group_by(year) %>%
+  summarize(avg_weight = mean(weight, na.rm = TRUE))
+
+
+
 

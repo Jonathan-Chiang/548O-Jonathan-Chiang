@@ -18,3 +18,18 @@ project_dir
 # find files that end with ".R" in the directory
 R_files <- grep(".R$", project_dir, value = TRUE)
 R_files
+
+### Exercise 3
+  # find countries with "i" or "t" and ends with "land", then replace "land" with "LAND"
+it_land <- grep("[it]", levels(gDat$country), value = TRUE, ignore.case = TRUE) %>%
+  grep("land$", ., value = TRUE) %>% 
+  gsub("land", "LAND", .)
+it_land
+
+
+
+
+
+
+
+

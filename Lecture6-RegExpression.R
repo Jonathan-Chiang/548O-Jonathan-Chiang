@@ -26,8 +26,10 @@ it_land <- grep("[it]", levels(gDat$country), value = TRUE, ignore.case = TRUE) 
   gsub("land", "LAND", .)
 it_land
 
-
-
+### Exercise 4 
+# find continents in gapminder dataset with "o" in it 
+o_continents <- grep("[o]", levels(gDat$continent), value = TRUE, ignore.case = TRUE)
+o_continents
 
 
 

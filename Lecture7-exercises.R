@@ -48,9 +48,9 @@ mass_unknown_dino <- get_mass_from_length_w_defaults(16); mass_unknown_dino
 ### Exercise 4 
 library(dplyr)
 
-# function to convert kilograms to pounds (pound=kilogram/2.205)
+# function to convert kilograms to pounds (pound=kilogram*2.205)
 kilograms2pounds <- function(kilograms) {
-  pounds <- kilograms/2.205
+  pounds <- kilograms*2.205
   return(pounds)
 }
 

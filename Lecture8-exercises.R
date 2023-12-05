@@ -83,3 +83,35 @@ get_mass_from_length_by_name(12, "Sauropoda")
 # for Ankylosaur that is 13 meters long 
 get_mass_from_length_by_name(13, "Ankylosauria")
 
+
+### Exercise 5
+#1 use for loop to print numbers 2 through 16
+for (i in 2:16) {
+  print(i)
+}
+#2 use for loop to print each number multiplied by 3 
+for (i in 2:16) {
+  print(i*3)
+}
+#3 print out the name of each bird, one line at a time
+birds = c('robin', 'woodpecker', 'blue jay', 'sparrow')
+for (i in 1:length(birds)){
+  print(birds[i])
+}
+#4 store one area for each radius
+radius <- c(1.3, 2.1, 3.5)
+areas <- vector(mode = "numeric", length = length(radius))
+for (i in 1:length(radius)){
+  areas[i] <- pi * radius[i] ^ 2
+}
+areas
+
+#5 calculate and print an area for each pair of lengths and widths, storing the areas in a vector
+lengths = c(1.1, 2.2, 1.6)
+widths = c(3.5, 2.4, 2.8)
+areas <- vector(length = length(length))
+for (i in 1:length(length)) {
+  areas[i] <- lengths[i] * widths[i]
+}
+areas
+

@@ -11,12 +11,21 @@ dna2 <- "attattaggaacaca"
 
 # print whether w is greater than 10
 w > 10
-
 # print whether green is in colors
 "green" %in% colors
-
 # print whether x is greater than y
 x > y
-
 # print whether each value in masses is greater than 40
 masses > 40
+
+
+### Exercise 2
+# if statement that sets y <- 10 if age_class is equal to sapling
+age_class = "sapling"
+if (age_class == "sapling"){
+  y <- 10
+}
+y
+
+
+

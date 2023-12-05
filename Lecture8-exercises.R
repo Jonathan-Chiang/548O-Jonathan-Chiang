@@ -49,3 +49,37 @@ if (age_class == "sapling"){
 }
 y
 
+
+### Exercise 4 
+# get_mass_from_length function from lecture 7 exercise
+get_mass_from_length <- function(length, a, b){
+  mass <-  a * length ^ b
+}
+# create function that estimates mass, taking length and dinosaur group name as arugments
+get_mass_from_length_by_name <- function(length, dino_name) {
+  if (dino_name == "Stegosauria") {
+    a <- 10.95
+    b <- 2.64
+  } else if (dino_name == "Theropoda") {
+    a <- 0.73
+    b <- 3.63
+  } else if (dino_name == "Sauropoda") {
+    a <- 214.44
+    b <- 1.46
+  } else {
+    a <- NA
+    b <- NA
+  } 
+  mass <- get_mass_from_length(length, a, b)
+  return(mass)
+}
+
+# for Stegosauria that is 10 meters long
+get_mass_from_length_by_name(10, "Stegosauria")
+# for Theropoda that is 8 meters long
+get_mass_from_length_by_name(8, "Theropoda")
+# for Sauropoda that is 12 meters long
+get_mass_from_length_by_name(12, "Sauropoda")
+# for Ankylosaur that is 13 meters long 
+get_mass_from_length_by_name(13, "Ankylosauria")
+

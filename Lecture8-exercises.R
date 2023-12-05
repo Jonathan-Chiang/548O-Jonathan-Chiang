@@ -28,4 +28,24 @@ if (age_class == "sapling"){
 y
 
 
+### Exercise 3 
+# if statement that sets y to 10 if age_class is equal to sapling, and y to 5 if age_class is equal to seedling
+age_class <- "seedling"
+if (age_class == "sapling"){
+  y <- 10
+} else if (age_class == "seedling"){
+  y <- 5
+}
+y
+
+# if statement that sets y to 10 if age_class == sapling, y to 5 if age_class == seedling, and y to 0 if age_class is something else
+age_class <- "adult"
+if (age_class == "sapling"){
+  y <- 10
+} else if (age_class == "seedling"){
+  y <- 5
+} else {
+  y <- 0
+}
+y
 
